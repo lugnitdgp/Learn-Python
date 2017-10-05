@@ -2,19 +2,19 @@
 # Users are advised to go through this piece of code and dry run it to get an understanding of function calls.
 
 from sys import exit
-def gold_room():
+def gold_room(): #Simple function with no parameters
   print "This room is full of gold.How much do you take?"
   next = raw_input("> ")
-  if "0" in next or "1" in next:
-    how_much = int(next)
+  if "0" in next or "1" in next: #check if '0' or '1' in the user input
+    how_much = int(next) #conver the user input number in to the integer format
   else:
      dead("Man, learn to type a number.")
   if how_much < 50:
     print "Nice, you're not greedy, you win!"
-    exit(0)
+    exit(0) #imported function
   else:
     dead("You greedy bastard!")
-def bear_room():
+def bear_room(): #anothe Simple functon that can easyly undestand
   print "There is a bear here."
   print "The bear has a bunch of honey."
   print "The fat bear is in front of another door."
@@ -40,11 +40,11 @@ def cthulu_room():
   print "Do you flee for your life or eat your head?"
   next = raw_input("> ")
   if "flee" in next:
-    start()
+    start() #this line call for the start funtion in the below
   elif "head" in next:
     dead("Well that was tasty!")
   else:
-    cthulu_room()
+    cthulu_room() #this one call this function again (recursively)
     
 def dead(why):
   print why, "Good job!"
