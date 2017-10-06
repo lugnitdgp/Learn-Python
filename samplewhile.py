@@ -6,14 +6,33 @@
 
 # SAMPLE CODE
 
+# initialize the while iterator to 0
 i = 0
+
+# initialze empty numbers array
 numbers = []
+
+# keep running this while loop as long as 'i' is less than 6
 while i < 6:
+
+  # prints the value of i at the beginning of the loop
   print "At the top i is %d" % i
+
+  # adds the number i to the number array
   numbers.append(i)
+
+  # increase the number i by 1
   i = i + 1
+
+  # prints the current numbers array
   print "Numbers now: ", numbers
+
+  # prints the value of i at the end of the loop
   print "At the bottom i is %d" % i
-  print "The numbers: "
+
+# prints the numbers of the numbers array,
+# every value of i during the loop before it exited (0 through 5)
+# since the while loop exited when i reached 6
+print "The numbers: "
 for num in numbers:
   print num
