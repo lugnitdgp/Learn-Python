@@ -1,4 +1,3 @@
-#tool imports files to script
 from sys import argv
 script , filename =argv
 txt=open(filename)
