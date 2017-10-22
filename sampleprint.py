@@ -1,3 +1,5 @@
+# coding: utf-8
+
 # prints an empty space since comments are ignored
 print #"Hello World!"
 
@@ -32,3 +34,17 @@ print "There will be", cars_not_driven, "empty cars today."
 print "We can transport", carpool_capacity, "people today."
 print "There are only", drivers, "drivers available."
 print "There are", cars, "cars available." 
+
+# In all these lines of code, one thing got lost in the process:
+# the first line. When we code, most of the things are wrote in
+# english, but sometimes we need those things in another language.
+# Languages like Portuguese and Spanish have accents, special
+# characters and some other stuff that, when we try to print, 
+# its outputed wrong. To correct that, in the first line of the
+# code, we simply add a comment, on the first line, with the sentence
+# "coding: utf-8", as we can see on this file. Adding it, we can
+# print sentences like:
+
+print "Olá mundo!" # portuguese for "Hello World!"
+
+
