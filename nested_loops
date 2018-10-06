@@ -1,0 +1,25 @@
+#Program to understand working of loops and nested loops in python by a simple pattern formation.
+#suppose if user enters 4 then the following should be printed
+#output -
+#        *   
+
+#      *   *   
+
+#    *   *   *   
+
+#   *   *   *   *
+# ignore all the '#' above in the output
+
+a=int(input("enter ")) #we take an input from the users of how many lines the pattern should run.
+for i in range(a): #executing a loop, here i's value will start from 0 till a-1.
+    t=((a-1)-i) #carefuly observing the pattern we get  to understand that we need loop for spaces and one for * so first we define t that will contain values from a-1 to 0
+    for b in range(t): #creating a Nested loop for spaces
+        print(" ",end=' ')
+    k=i+1 #by observing the pattern above we can see that we need a variable that can print the number of * , and by logic the line number = number of * in that line
+    for c in range(k): # making a loop to print *
+        print("*"," ",end=' ')
+    print("\n")
+
+# Hence loops work in a defined order to produce a specific result.
+# hence in all , all the logical patterns are solved by nested loop concept and to be a master in that getting the right logic and sufficient number of nested loops is important.
+# If possible try running this python code and try putting different input and see the output
